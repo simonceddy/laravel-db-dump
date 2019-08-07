@@ -17,5 +17,6 @@ class DbDumpCommand extends Command
     public function handle()
     {
         $this->alert('testing');
+        dd($this->laravel);
     }
 }
