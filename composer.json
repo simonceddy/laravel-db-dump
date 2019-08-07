@@ -1,0 +1,36 @@
+{
+    "name": "simoneddy/laravel-db-dump",
+    "description": "DB Dump command for laravel 5.4+",
+    "type": "library",
+    "license": "MIT",
+    "config": {
+        "bin-dir": "bin"
+    },
+    "authors": [
+        {
+            "name": "Simon Eddy",
+            "email": "simon@simoneddy.com.au"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Eddy\\DbDump\\": "src"
+        }
+    },
+    "require": {
+        "illuminate/console": "^5.8",
+        "illuminate/support": "^5.8",
+        "symfony/process": "^4.3",
+        "illuminate/filesystem": "^5.8",
+        "league/flysystem": "^1.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Eddy\\DbDump\\Provider\\DbDumpProvider"
+            ]
+        }
+    }
+}
